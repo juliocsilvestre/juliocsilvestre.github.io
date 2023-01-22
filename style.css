@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #2B2B2B;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 4px;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background: #000;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.potter-icon {
+    width: 45px;
+    align-self: flex-start;
+    margin-top: -5px;
+}
+
+.potter-icon img {
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@keyframes startingAnimation {
+    0% {
+        transform: translate3d(-30vw, 0, 0);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translate3d(20vw, 0, 0);
+        opacity: .7;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.intro {
+    animation: startingAnimation 2s ease-in-out forwards;
+}
+
+.my-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #3203b2, #06064c);
+}
+
+
+
+
+.my-name .intro h1 {
+    font-size: 80px;
+}
+
+.my-name .intro h3 {
+    font-size: 28px;
+    text-align: end;
+    color: #fff;
+}
+
+.my-name .hero-container {
+    width: 600px;
+}
+
+.my-name .hero-container img {
+    max-width: 100%;
+}
+
+.portfolio {
+    color: #FFFFFF;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.portfolio span {
+    color: #e08277;
+}
+
+li {
+    color: #FFFFFF;
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+li:hover {
+    color: #e08277;
+    transition: 0.5s;
+
+}
+
+.linkMenu {
+    text-decoration: none;
+    color: white;
+
+}
+
+.linkMenu:hover {
+    color: #e08277;
+    transition: 0.5s;
+
+}
+
+h1 {
+    color: white;
+    font: size 80px;
+
+}
+
+h1 span {
+    color: #e08277;
+
+}
+
+.myname h3 {
+    color: white;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section div h2 {
+    color: #e08277;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+/* section div p {
+    color: #eee6e8;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+section div button {
+    color: white;
+    background: orangered;
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+} */
+
+.about-content p {
+    width: 500px;
+    color: white;
+}
+
+.card-skill {
+    background: transparent;
+    border-radius: 12px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.card-skill:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, .2), 0 8px 12px rgba(0, 0, 0, .4), 0 8px 12px rgba(0, 0, 0, .6);
+    transition: .3s ease-in-out;
+    transform: scale(1.10)
+}
+
+
+.about-and-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: 100vh;
+}
+
+.skills {
+    background: red;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 0.7rem;
+
+}
+
+.icon-skill-container {
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.icon-skill-container img {
+    max-width: 100%;
+}
+
+section div button:hover {
+    background-color: #e08277;
+    transition: 0.5s;
+
+}
+
+.projects {
+    background: #2B2B2B;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+
+.projects h2 {
+    height: 100px;
+    color: white;
+    font-size: 75px;
+    text-align: center;
+
+
+}
+
+.card {
+    background-color: #191919;
+    height: 365px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+}
+
+.card img {
+    height: 100px;
+    background-color: #191919;
+}
+
+.card h5 {
+    color: white;
+    font-size: 24px;
+
+}
+
+.card p {
+    color: #e2b9c6;
+    margin: 20px 0px 40px 0px;
+}
+
+.card a {
+    background: orangered;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: transparent;
+    border: 2px solid orangered;
+    transition: 0.5s;
+
+}
+
+.card-projects {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+
+footer {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+footer h5 {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 5px;
+
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin: top 14px;
+
+
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+
+
+}
+
+.social img {
+    height: 25px;
+    border-radius: 50%;
+}
+
+.social a {
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    cursor: pointer
+}
