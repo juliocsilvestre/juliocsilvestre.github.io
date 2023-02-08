@@ -398,6 +398,11 @@ footer p {
         width: max-content;
 
     }
+    
+    .my-name .hero-container {
+    width: auto;
+        
+    }
 
     .my-name {
         flex-direction: column;
@@ -598,6 +603,7 @@ footer p {
         padding: 5px 0;
         padding-right: 450px;
         position: fixed;
+        padding-left: 20px;
     }
 
     #hamburguer span {
@@ -649,6 +655,11 @@ footer p {
     .my-name {
         flex-direction: column;
     }
+    
+    .my-name .hero-container {
+    width: auto;
+    
+    }
 
     .portfolio {
         font-size: 30px;
@@ -845,6 +856,7 @@ footer p {
         padding: 5px 0;
         padding-right: 450px;
         position: fixed;
+        padding-left: 20px;
     }
 
     #hamburguer span {
