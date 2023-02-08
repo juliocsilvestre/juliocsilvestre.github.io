@@ -396,6 +396,7 @@ footer p {
     header {
         position: fixed;
         width: max-content;
+        padding-left: 50px;
 
     }
     
@@ -601,7 +602,7 @@ footer p {
         border: none;
         width: 30px;
         padding: 5px 0;
-        padding-right: 450px;
+        padding-right: 400px;
         position: fixed;
         padding-left: 20px;
     }
