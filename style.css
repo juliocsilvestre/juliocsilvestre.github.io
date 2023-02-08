@@ -656,14 +656,9 @@ footer p {
     .my-name {
         flex-direction: column;
     }
-    
-    .my-name .hero-container {
-    width: auto;
-    
-    }
 
     .portfolio {
-        font-size: 30px;
+        font-size: 40px;
         padding-right: 50px;
 
     }
@@ -675,7 +670,8 @@ footer p {
     }
 
     .my-name {
-        max-width: max-content;
+        /* max-width: max-content; */
+        width: 1023.98px;
     }
 
     .my-name .intro {
@@ -684,7 +680,7 @@ footer p {
     }
 
     .my-name .intro h1 {
-        font-size: 30px;
+        font-size: 50px;
         margin-left: 2rem;
         flex-direction: column;
         padding-top: 80px;
@@ -692,7 +688,7 @@ footer p {
     }
 
     .my-name .intro h3 {
-        font-size: 16px;
+        font-size: 20px;
         text-align: end;
         color: #fff;
         margin-left: 2rem;
@@ -700,12 +696,17 @@ footer p {
         flex-direction: column;
     }
 
+    .my-name .hero-container {
+        width: auto;
+        margin: 0px;
+    }
 
     .hero-container img {
         flex-direction: column;
-        width: 500px;
+        width: auto;
         padding-left: 90px;
         display: flex;
+        max-width: 100%;
     }
 
     .about-and-skills {
@@ -713,10 +714,12 @@ footer p {
         flex-direction: column;
         padding-top: 1050px;
         justify-content: baseline;
+
     }
 
     .about-and-skills p {
         padding-top: 30px;
+        width: fit-content;
 
 
     }
@@ -725,29 +728,38 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 90px;
     }
 
     .about-content h2 {
-        font-size: 25px;
+        font-size: 45px;
         max-width: 14rem;
+        padding-top: 150px;
     }
 
     .about-content p {
-        font-size: 14px;
+        font-size: 20px;
         max-width: 14rem;
-        margin: 20px;
+        margin: 10px;
+        max-width: fit-content;
+        flex-direction: column;
+        display: flex;
+
     }
 
     .about-skill {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 480px;
+        padding-bottom: 600px;
         margin-left: 30px;
+        padding-right: 200px;
+        padding-top: 50px;
+        padding-left: 220px;
     }
 
     .about-skill h2 {
-        font-size: 25px;
+        font-size: 45px;
     }
 
     .card-skill span {
@@ -760,13 +772,14 @@ footer p {
     .projects {
         padding-top: 35rem;
         flex-direction: column;
-        font-size: 20px;
-        height: 120rem;
+        font-size: 45px;
+        height: 145rem;
+        padding-left: 100px;
 
     }
 
     .projects h2 {
-        font-size: 25px;
+        font-size: 45px;
     }
 
     .card-projects {
@@ -775,26 +788,52 @@ footer p {
         font-size: 12px;
         align-items: center;
         margin: 30px;
+        padding-top: 50px;
     }
 
     .card {
         margin-bottom: 60px;
-
+        font-size: 15px;
+        background-color: #191919;
+        height: 425px;
+        width: 365px;
+        border-radius: 15px;
+        padding: 20px 35px;
+        text-align: center;
 
     }
 
     footer {
-        padding-top: 80rem;
-        height: 12rem;
+        padding-top: 10rem;
+        height: 30rem;
         margin: 0px;
         padding: 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 50px;
-        padding-bottom: 40px;
-        margin-top: 150px;
+        margin-top: 30px;
+        padding-bottom: 10rem;
+        padding-left: 100px;
+        width: 1023.98px;
 
+
+    }
+
+    footer h5 {
+        margin-right: 200px;
+        font-size: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    footer p {
+        margin-right: 200px;
+        margin-bottom: 30px;
+
+    }
+
+    footer .social {
+        margin-right: 200px;
 
     }
 
@@ -857,7 +896,6 @@ footer p {
         padding: 5px 0;
         padding-right: 450px;
         position: fixed;
-        padding-left: 20px;
     }
 
     #hamburguer span {
