@@ -399,10 +399,10 @@ footer p {
         padding-left: 50px;
 
     }
-    
+
     .my-name .hero-container {
-    width: auto;
-        
+        width: auto;
+
     }
 
     .my-name {
@@ -412,13 +412,11 @@ footer p {
     .portfolio {
         font-size: 30px;
         padding-right: 50px;
-
+        padding-left: 40px;
     }
 
     .potter-icon {
         margin-right: 100px;
-
-
     }
 
     .my-name {
@@ -427,7 +425,6 @@ footer p {
 
     .my-name .intro {
         padding-top: 80px;
-
     }
 
     .my-name .intro h1 {
@@ -464,8 +461,6 @@ footer p {
 
     .about-and-skills p {
         padding-top: 30px;
-
-
     }
 
     .about-content {
@@ -499,8 +494,6 @@ footer p {
 
     .card-skill span {
         font-size: 12px;
-
-
     }
 
 
@@ -509,7 +502,6 @@ footer p {
         flex-direction: column;
         font-size: 20px;
         height: 120rem;
-
     }
 
     .projects h2 {
@@ -526,8 +518,6 @@ footer p {
 
     .card {
         margin-bottom: 60px;
-
-
     }
 
     footer {
@@ -541,8 +531,14 @@ footer p {
         padding-top: 50px;
         padding-bottom: 40px;
         margin-top: 150px;
+    }
 
+    footer h5 {
+        font-size: 25px;
+    }
 
+    footer p {
+        font-size: 15px;
     }
 
     body {
@@ -569,7 +565,6 @@ footer p {
         position: absolute;
         width: 100%;
         top: 80px;
-        background: gray;
         height: 0px;
         z-index: 1000;
         transition: .6s;
@@ -587,7 +582,7 @@ footer p {
         padding: 30px;
         visibility: visible;
         margin-top: -9px;
-        background: gray;
+        background: #000000;
     }
 
     #menu a {
@@ -604,7 +599,7 @@ footer p {
         padding: 5px 0;
         padding-right: 400px;
         position: fixed;
-        padding-left: 20px;
+        padding-left: 60px;
     }
 
     #hamburguer span {
@@ -774,7 +769,7 @@ footer p {
         flex-direction: column;
         font-size: 45px;
         height: 145rem;
-        padding-left: 100px;
+        padding-left: 50px;
 
     }
 
@@ -804,26 +799,19 @@ footer p {
     }
 
     footer {
-        padding-top: 10rem;
         height: 30rem;
         margin: 0px;
         padding: 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 30px;
-        padding-bottom: 10rem;
-        padding-left: 100px;
         width: 1023.98px;
-
-
     }
 
     footer h5 {
         margin-right: 200px;
         font-size: 30px;
         margin-bottom: 10px;
-
     }
 
     footer p {
@@ -861,7 +849,7 @@ footer p {
         position: absolute;
         width: 100%;
         top: 80px;
-        background: gray;
+        background: #000000;
         height: 0px;
         z-index: 1000;
         transition: .6s;
@@ -878,13 +866,12 @@ footer p {
         width: 100%;
         padding: 30px;
         visibility: visible;
-        margin-top: -9px;
-        background: gray;
+        background: #000000;
     }
 
     #menu a {
         padding: 1rem 0;
-        margin: 0 1rem;
+        margin: 0 8rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
     }
 
