@@ -1,6 +1,6 @@
 <h1> 📁 Resumo do projeto</h1>
 
-- Portfolio front-end com um conjunto de projetos e trabalhos que demonstram as minhas habilidades e conhecimentos como desenvolvedor e que também incluem detalhes sobre as minhas experiências (pessoal e profissional), habilidades técnicas e contato para possíveis empregadores ou clientes.
+- Portfolio front-end com um conjunto de projetos e trabalhos que demonstram as minhas habilidades e conhecimentos como desenvolvedor e que também incluem detalhes sobre as minhas experiências (pessoais e profissionais), habilidades técnicas e contato para possíveis empregadores ou clientes.
 
 🔨 Funcionalidades do projeto
 ---
