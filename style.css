@@ -419,10 +419,6 @@ footer p {
         margin-right: 100px;
     }
 
-    .my-name {
-        max-width: max-content;
-    }
-
     .my-name .intro {
         padding-top: 80px;
     }
@@ -665,7 +661,6 @@ footer p {
     }
 
     .my-name {
-        /* max-width: max-content; */
         width: 1023.98px;
     }
 
