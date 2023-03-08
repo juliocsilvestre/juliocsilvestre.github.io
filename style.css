@@ -917,4 +917,39 @@ footer p {
 
 }
 
+@media (max-width: 400px) {
+
+    .header {
+        padding-left: 80px;
+    }
+
+    .about-content {
+
+        margin-top: 350px;
+    }
+
+    .projects {
+        height: auto;
+    }
+
+    .projects h2 {
+        margin-top: 375px;
+    }
+
+    .about-skill h2 {
+        padding-right: 60px;
+    }
+
+    .card-projects {
+        height: auto;
+        gap: 1px;
+
+    }
+
+    footer {
+        height: auto;
+    }
+
+}
+
 @media (min-width: 1024px) {}
