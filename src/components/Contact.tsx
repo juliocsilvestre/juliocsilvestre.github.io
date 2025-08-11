@@ -48,7 +48,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Vamos <span className="text-gradient">Conversar</span>
@@ -59,9 +59,9 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
-          <div className="card-gradient rounded-xl p-8">
+          <div className="card-gradient rounded-xl p-6 sm:p-8">
             <h3 className="text-2xl font-semibold mb-6">Me mande uma mensagem</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -133,7 +133,7 @@ const Contact = () => {
           
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="card-gradient rounded-xl p-8">
+            <div className="card-gradient rounded-xl p-6 sm:p-8">
               <h3 className="text-2xl font-semibold mb-6">Vamos nos conectar</h3>
               <p className="text-muted-foreground mb-8">
                 Estou sempre interessado em novas oportunidades e colaborações.
