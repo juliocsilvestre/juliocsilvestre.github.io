@@ -12,3 +12,5 @@
 - HTML5
 - CSS3
 - JavaScript
+
+update user and readme
