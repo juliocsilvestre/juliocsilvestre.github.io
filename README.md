@@ -1,4 +1,4 @@
-# Portfólio Front-end - Julio Silvestre
+# Portfólio - Julio Silvestre
 
 📁 **Resumo do projeto**  
 Portfolio front-end com um conjunto de projetos e trabalhos que demonstram minhas habilidades e conhecimentos como desenvolvedor. Inclui detalhes sobre minhas experiências pessoais e profissionais, habilidades técnicas e formas de contato para empregadores ou clientes.
