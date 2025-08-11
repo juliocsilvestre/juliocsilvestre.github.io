@@ -21,6 +21,7 @@ const Navigation = () => {
     { label: "Skills", href: "#skills" },
     { label: "Projetos", href: "#projects" },
     { label: "Experiência", href: "#experience" },
+    { label: "Formação", href: "#academic" },   
     { label: "Contato", href: "#contact" },
   ];
 

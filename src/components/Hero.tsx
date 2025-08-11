@@ -10,6 +10,15 @@ const Hero = () => {
     }
   };
 
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/Curriculo_Julio_Silvestre.pdf';
+    link.download = 'Curriculo_Julio_Silvestre.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen hero-gradient flex items-center justify-center relative pt-20 lg:pt-0">
       <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-8 lg:gap-12 px-4">
@@ -47,7 +56,12 @@ const Hero = () => {
               <Mail className="w-5 h-5" />
               Vamos conversar
             </Button>
-            <Button variant="secondary" size="lg" className="gap-2">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="gap-2"
+              onClick={downloadCV}
+            >
               <Download className="w-5 h-5" />
               Download CV
             </Button>

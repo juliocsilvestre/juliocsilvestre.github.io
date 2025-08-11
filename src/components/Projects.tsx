@@ -4,28 +4,28 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce platform built with React and Node.js featuring user authentication, payment integration, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop&crop=entropy&auto=format",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Dogs",
+      description: "Criação da aplicação Dogs, uma rede social para cachorros.",
+      image: "https://dogsapi.origamid.dev/wp-content/uploads/2020/07/charles-deluvio-Mv9hjnEUHR4-unsplash-1-1000x1000.jpg",
+      technologies: ["React", "React Router", "TypeScript", "Victory"],
+      githubUrl: "https://github.com/juliocsilvestre/dogs-origamid",
+      liveUrl: "https://dogs-origamid-lemon.vercel.app/"
     },
     {
       title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      description: "Um aplicativo de gerenciamento de tarefas colaborativo com atualizações em tempo real, recursos de colaboração em equipe.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop&crop=entropy&auto=format",
-      technologies: ["React Native", "Firebase", "TypeScript"],
-      githubUrl: "#",
-      liveUrl: "#"
+      technologies: ["React", "Node.js", "TypeScript"],
+      githubUrl: "https://github.com/juliocsilvestre/propig-list",
+      liveUrl: "https://propig-list.vercel.app/"
     },
     {
       title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing modern design principles and smooth animations built with React and Tailwind CSS.",
+      description: "Um site de portfólio responsivo que exibe princípios de design modernos e animações suaves, construído com React e Tailwind CSS.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop&crop=entropy&auto=format",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      githubUrl: "#",
-      liveUrl: "#"
+      technologies: ["React", "Tailwind CSS", "React Router Dom", "Shadcn UI"],
+      githubUrl: "https://github.com/juliocsilvestre/juliocsilvestre.github.io",
+      liveUrl: "https://juliocsilvestre.github.io/"
     }
   ];
 
@@ -68,11 +68,11 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3 mt-auto">
-                  <Button size="sm" variant="outline" className="flex-1 flex items-center justify-center gap-2">
+                  <Button size="sm" variant="outline" className="flex-1 flex items-center justify-center gap-2" onClick={() => window.open(project.githubUrl, "_blank")}>
                     <Github className="w-4 h-4" />
                     Code
                   </Button>
-                  <Button size="sm" className="flex-1 flex items-center justify-center gap-2">
+                  <Button size="sm" className="flex-1 flex items-center justify-center gap-2" onClick={() => window.open(project.liveUrl, "_blank")}>
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
                   </Button>

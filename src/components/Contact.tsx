@@ -13,26 +13,30 @@ const Contact = () => {
   });
 
     const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+      e.preventDefault();
 
-    const subject = encodeURIComponent(formData.subject || 'Contato via Portfolio');
-    const body = encodeURIComponent(
-      `Olá Julio,\n\nMeu nome é ${formData.name}.\n\n${formData.message}\n\nAtenciosamente,\n${formData.name}\nEmail: ${formData.email}`
-    );
+      const subject = encodeURIComponent(formData.subject || 'Contato via Portfolio');
+      const body = encodeURIComponent(
+        `Olá Julio,\n\nMeu nome é ${formData.name}.\n\n${formData.message}\n\nAtenciosamente,\n${formData.name}\nEmail: ${formData.email}`
+      );
 
-    const mailtoLink = `mailto:jcss.silvestre@gmail.com?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:jcss.silvestre@gmail.com?subject=${subject}&body=${body}`;
 
-    window.location.href = mailtoLink;
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
+      window.location.href = mailtoLink;
 
-    alert('Abrindo seu cliente de email... Se não abrir automaticamente, copie este email: jcss.silvestre@gmail.com');
-  };
+      setTimeout(() => {
+        alert('Se o seu cliente de email não abrir, envie um e-mail para este endereço: jcss.silvestre@gmail.com');
+      }, 500);
+    };
+
+
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

@@ -11,7 +11,7 @@ const About = () => {
         
         <div className="space-y-8 text-lg leading-relaxed">
           <p className="text-center lg:text-left">
-              Sou um desenvolvedor Frontend apaixonado, com uma base sólida em tecnologias web modernas e uma crescente especialização em desenvolvimento mobile. 
+              Sou um desenvolvedor Frontend, com uma base sólida em tecnologias web modernas e uma crescente especialização em desenvolvimento mobile. 
               Atualmente, estou ampliando meus conhecimentos em tecnologias backend e gerenciamento de bancos de dados para me tornar um desenvolvedor full-stack completo.
           </p>
           
