@@ -95,7 +95,7 @@ const Navigation = () => {
                   onClick={() => scrollToSection("#contact")}
                   className="w-full"
                 >
-                  Hire Me
+                  Solicitar orçamento
                 </Button>
               </div>
             </div>
