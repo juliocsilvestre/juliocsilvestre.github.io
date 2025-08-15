@@ -25,11 +25,17 @@ const Hero = () => {
         {/* Profile Photo */}
         <div className="animate-bounce-in">
           <div className="relative">
-            <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
-              <img 
-                src={profilePhoto} 
-                alt="Profile Photo" 
-                className="w-full h-full object-cover"
+            <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl bg-muted">
+              <img
+                src="/profile-photo.jpg"
+                srcSet="/profile-photo.jpg 480w, /profile-photo.jpg 768w, /profile-photo.jpg 1024w"
+                sizes="(max-width: 640px) 64vw, (max-width: 1024px) 40vw, 384px"
+                width={384}
+                height={384}
+                alt="Profile Photo"
+                loading="eager"
+                decoding="async"
+                className="w-full h-full object-cover transition-opacity duration-300 bg-muted"
               />
             </div>
           </div>
