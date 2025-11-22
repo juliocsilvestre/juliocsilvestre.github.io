@@ -3,21 +3,20 @@ import { Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Frontend Developer",
+      title: "Software Engineer",
       company: "Grupo Moura.",
       location: "Recife - PE",
       period: "2025 - Presente",
-      description: `Sou responsável pelo desenvolvimento front-end, criando novas telas e funcionalidades utilizando tecnologias como HTML, JavaScript, Django, React e TypeScript. 
+      description: `Atuo no desenvolvimento full-stack, criando novas telas, funcionalidades e APIs utilizando tecnologias como React, TypeScript, Django, Python e Node.js.
       
-      Implemento testes end-to-end para garantir a qualidade das entregas e realizo otimizações para melhorar o desempenho das aplicações. 
+      Desenvolvo e mantenho aplicações backend, incluindo APIs RESTful e integrações com bancos de dados PostgreSQL. Implemento testes end-to-end para garantir a qualidade das entregas e realizo otimizações para melhorar o desempenho das aplicações.
       
-      Além disso, ofereço suporte técnico, solucionando chamados relacionados às aplicações da empresa. Participo ativamente das reuniões diárias para alinhamento das atividades com o time e apresento os resultados das sprints, evidenciando o progresso alcançado e os próximos passos. 
-      
-      Também realizo ajustes e consultas em bancos de dados PostgreSQL para apoiar as necessidades das aplicações.`,
+      Ofereço suporte técnico completo, desde front-end até banco de dados, solucionando chamados relacionados às aplicações da empresa. Participo ativamente das reuniões diárias para alinhamento das atividades com o time e apresento os resultados das sprints, evidenciando o progresso alcançado e os próximos passos.`,
       achievements: [
-        "Melhoria no desempenhos das aplicações",
-        "Liderança em decisões de arquitetura de frontend",
-      ]
+        "Desenvolvimento de APIs e integrações backend",
+        "Melhoria no desempenho das aplicações",
+        "Liderança em decisões de arquitetura full-stack",
+      ],
     },
     {
       title: "Full-Stack Developer",
@@ -32,8 +31,8 @@ const Experience = () => {
       achievements: [
         "Contribuiu para mais de 4 projetos de clientes",
         "Aprendeu fluxos de trabalho de desenvolvimento modernos",
-        "Construiu uma base sólida em tecnologias web"
-      ]
+        "Construiu uma base sólida em tecnologias web",
+      ],
     },
     {
       title: "Front end & Mobile App Developer",
@@ -50,9 +49,9 @@ const Experience = () => {
       achievements: [
         "Entrega de 2 aplicativos mobile ( iOS & Android ) para produção",
         "Implementação de funções Offline",
-        "Melhoria na performance das aplicações"
-      ]
-    }
+        "Melhoria na performance das aplicações",
+      ],
+    },
   ];
 
   return (
@@ -64,28 +63,33 @@ const Experience = () => {
           </h2>
           <div className="w-24 h-1 accent-gradient mx-auto rounded-full"></div>
         </div>
-        
+
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-primary/30"></div>
-          
+
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} className={`relative flex items-center ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              }`}>
+              <div
+                key={index}
+                className={`relative flex items-center ${
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
+              >
                 {/* Timeline dot */}
                 <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10"></div>
-                
-                <div className={`ml-12 md:ml-0 md:w-1/2 ${
-                  index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
-                }`}>
+
+                <div
+                  className={`ml-12 md:ml-0 md:w-1/2 ${
+                    index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+                  }`}
+                >
                   <div className="card-gradient rounded-xl p-6 hover-lift">
                     <div className="flex items-center gap-2 text-sm text-primary mb-2">
                       <Calendar className="w-4 h-4" />
                       {exp.period}
                     </div>
-                    
+
                     <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
                     <div className="flex items-center gap-2 text-muted-foreground mb-4">
                       <span className="font-medium">{exp.company}</span>
@@ -95,14 +99,17 @@ const Experience = () => {
                         {exp.location}
                       </div>
                     </div>
-                    
+
                     <p className="text-sm text-muted-foreground mb-4 whitespace-pre-line">
                       {exp.description}
                     </p>
-                    
+
                     <div className="space-y-2">
                       {exp.achievements.map((achievement, achievementIndex) => (
-                        <div key={achievementIndex} className="flex items-start gap-2">
+                        <div
+                          key={achievementIndex}
+                          className="flex items-start gap-2"
+                        >
                           <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                           <span className="text-sm">{achievement}</span>
                         </div>

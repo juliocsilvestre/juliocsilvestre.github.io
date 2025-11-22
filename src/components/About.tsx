@@ -11,13 +11,12 @@ const About = () => {
 
         <div className="space-y-8 text-lg leading-relaxed">
           <p className="text-center lg:text-left">
-            Sou um desenvolvedor Frontend, com uma base sólida em tecnologias
-            web modernas e uma crescente especialização em desenvolvimento
-            mobile. Atualmente, estou ampliando meus conhecimentos em
-            tecnologias backend e gerenciamento de bancos de dados para me
-            tornar um desenvolvedor full-stack completo.
-          </p>
-
+            Software Engineer com experiência sólida em desenvolvimento
+            full-stack, especializado em aplicações web e mobile modernas.
+            Domino tecnologias frontend (React, React Native, TypeScript) e
+            backend (Node.js, APIs RESTful, bancos de dados), criando soluções
+            completas e escaláveis do início ao fim.
+          </p>{" "}
           <p className="text-center lg:text-left">
             Com um olhar atento para design e experiência do usuário, acredito
             em criar aplicações que não sejam apenas funcionais, mas também
@@ -25,7 +24,6 @@ const About = () => {
             melhores práticas para entregar soluções inovadoras e alinhadas às
             necessidades de cada projeto.
           </p>
-
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center">
               <div className="w-16 h-16 accent-gradient rounded-full flex items-center justify-center mx-auto mb-4">

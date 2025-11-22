@@ -11,16 +11,19 @@ const Hero = () => {
   };
 
   const downloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/Curriculo_Julio_Silvestre.pdf';
-    link.download = 'Curriculo_Julio_Silvestre.pdf';
+    const link = document.createElement("a");
+    link.href = "/Curriculo_Julio_Silvestre.pdf";
+    link.download = "Curriculo_Julio_Silvestre.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <section id="home" className="min-h-screen hero-gradient flex items-center justify-center relative pt-20 lg:pt-0">
+    <section
+      id="home"
+      className="min-h-screen hero-gradient flex items-center justify-center relative pt-20 lg:pt-0"
+    >
       <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-8 lg:gap-12 px-4">
         {/* Profile Photo */}
         <div className="animate-bounce-in">
@@ -44,27 +47,28 @@ const Hero = () => {
         {/* Hero Content */}
         <div className="flex-1 text-center lg:text-left animate-fade-up">
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-            Frontend{" "}
-            <span className="text-gradient">Developer</span>
+            Software <span className="text-gradient">Engineer</span>
           </h1>
-          
+
           <p className="text-xl lg:text-2xl text-muted-foreground mb-8 max-w-2xl">
-             Desenvolvo soluções digitais inovadoras e eficientes, com foco em experiências mobile e web intuitivas e funcionais.  
-              Sou movido pela busca constante por aprendizado e pela entrega de resultados de alta qualidade.
+            Desenvolvo soluções digitais completas e escaláveis, do frontend ao
+            backend, com foco em experiências mobile e web intuitivas e de alta
+            performance. Sou movido pela busca constante por aprendizado e pela
+            entrega de resultados de excelência.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="gap-2"
               onClick={() => scrollToSection("#contact")}
             >
               <Mail className="w-5 h-5" />
               Vamos conversar
             </Button>
-            <Button 
-              variant="secondary" 
-              size="lg" 
+            <Button
+              variant="secondary"
+              size="lg"
               className="gap-2"
               onClick={downloadCV}
             >
@@ -74,7 +78,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
         <ArrowDown className="w-6 h-6 text-primary" />
