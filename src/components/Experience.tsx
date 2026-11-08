@@ -28,11 +28,11 @@ const Experience = () => {
       company: "Grupo Moura",
       location: "Recife - PE",
       period: "2025 - 2026",
-      description: `Atuo no desenvolvimento full-stack, criando novas telas, funcionalidades e APIs utilizando tecnologias como React, TypeScript, Django, Python e Node.js.
+      description: `Atuei no desenvolvimento full-stack, criando novas telas, funcionalidades e APIs utilizando tecnologias como React, TypeScript, Django, Python e Node.js.
       
-      Desenvolvo e mantenho aplicações backend, incluindo APIs RESTful e integrações com bancos de dados PostgreSQL. Implemento testes end-to-end para garantir a qualidade das entregas e realizo otimizações para melhorar o desempenho das aplicações.
+      Desenvolvi e mantive aplicações backend, incluindo APIs RESTful e integrações com bancos de dados PostgreSQL. Implementei testes end-to-end para garantir a qualidade das entregas e realizei otimizações para melhorar o desempenho das aplicações.
       
-      Ofereço suporte técnico completo, desde front-end até banco de dados, solucionando chamados relacionados às aplicações da empresa. Participo ativamente das reuniões diárias para alinhamento das atividades com o time e apresento os resultados das sprints, evidenciando o progresso alcançado e os próximos passos.`,
+      Ofereci suporte técnico completo, desde front-end até banco de dados, solucionando chamados relacionados às aplicações da empresa. Participei ativamente das reuniões diárias para alinhamento das atividades com o time e apresentei os resultados das sprints, evidenciando o progresso alcançado e os próximos passos.`,
       achievements: [
         "Desenvolvimento de APIs e integrações backend",
         "Melhoria no desempenho das aplicações",
