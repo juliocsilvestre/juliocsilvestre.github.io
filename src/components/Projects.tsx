@@ -1,8 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import orquestraImg from "@/assets/orquestra.webp";
+
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  imageAlt?: string;
+  technologies: string[];
+  githubUrl: string;
+  liveUrl?: string;
+}
 
 const Projects = () => {
-  const projects = [
+  const projects: Project[] = [
+    {
+      title: "Orquestra",
+      description: "Escritório 3D para orquestrar agentes de IA (Claude Code + Herdr): um Boss por projeto delega para devs, QA e especialistas, com fluxo de PR, revisão, sessões e painel de custos.",
+      image: orquestraImg,
+      imageAlt: "Orquestra — escritório 3D com agentes de IA",
+      technologies: ["Electron", "Node.js", "Three.js", "Claude Code"],
+      githubUrl: "https://github.com/juliocsilvestre/orquestra"
+    },
     {
       title: "Dogs",
       description: "Criação da aplicação Dogs, uma rede social para cachorros.",
@@ -45,7 +64,7 @@ const Projects = () => {
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={project.image} 
-                  alt={project.title}
+                  alt={project.imageAlt ?? project.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -72,10 +91,12 @@ const Projects = () => {
                     <Github className="w-4 h-4" />
                     Code
                   </Button>
-                  <Button size="sm" className="flex-1 flex items-center justify-center gap-2" onClick={() => window.open(project.liveUrl, "_blank")}>
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </Button>
+                  {project.liveUrl && (
+                    <Button size="sm" className="flex-1 flex items-center justify-center gap-2" onClick={() => window.open(project.liveUrl, "_blank")}>
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
