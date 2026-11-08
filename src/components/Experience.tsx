@@ -4,9 +4,30 @@ const Experience = () => {
   const experiences = [
     {
       title: "Software Engineer",
-      company: "Grupo Moura.",
+      company: "DECEA",
+      location: "Brasil",
+      period: "2026 - Presente",
+      description: `Stack: Python, FastAPI, SQLAlchemy, Alembic, PostgreSQL, Celery, Keycloak, OIDC/OAuth2, Next.js, React e TypeScript.`,
+      achievements: [
+        "Desenvolvimento full stack de plataforma de identidade e acesso corporativa, do backend à interface, atendendo usuários internos e organizações externas.",
+        "Implementação de autenticação e SSO com Keycloak (OIDC/OAuth2), federação com provedores de identidade externos e integração com o Login Único gov.br.",
+        "Modelagem de autorização multi-contexto: papéis, permissões por organização e equipe, hierarquia organizacional e troca de contexto em tempo de sessão.",
+        "Integração de assinatura eletrônica avançada (padrão PAdES) e adequação a requisitos de homologação e conformidade regulatória.",
+        "Desenvolvimento de APIs REST com Python (FastAPI, SQLAlchemy async, Alembic) e serviços auxiliares desacoplados por domínio.",
+        "Construção de interfaces com Next.js (App Router), React e TypeScript, aplicando padrão BFF para manter credenciais fora do navegador.",
+        "Design system compartilhado entre aplicações: componentes reutilizáveis, acessibilidade (WCAG 2.1 AA) e versionamento de pacote em registry privado.",
+        "Gestão de processos assíncronos com Celery — filas, tarefas agendadas e notificações transacionais por e-mail.",
+        "Modelagem e evolução de banco de dados PostgreSQL, com migrações versionadas validadas contra banco real antes da entrega.",
+        "Integração com serviços governamentais e de terceiros para validação de dados cadastrais e consultas oficiais.",
+        "Segurança aplicada: revisão de superfície de exposição de credenciais, correção de escalonamento de privilégio e testes de regressão para cada correção.",
+        "Utilização de IA e automação no fluxo de desenvolvimento, incluindo conceitos de MCP.",
+      ],
+    },
+    {
+      title: "Software Engineer",
+      company: "Grupo Moura",
       location: "Recife - PE",
-      period: "2025 - Presente",
+      period: "2025 - 2026",
       description: `Atuo no desenvolvimento full-stack, criando novas telas, funcionalidades e APIs utilizando tecnologias como React, TypeScript, Django, Python e Node.js.
       
       Desenvolvo e mantenho aplicações backend, incluindo APIs RESTful e integrações com bancos de dados PostgreSQL. Implemento testes end-to-end para garantir a qualidade das entregas e realizo otimizações para melhorar o desempenho das aplicações.

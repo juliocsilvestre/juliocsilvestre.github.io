@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import jsLogo from "@/assets/jslogo.png";
+import Logo from "@/components/Logo";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,13 +42,10 @@ const Navigation = () => {
           {/* Logo */}
           <button 
             onClick={() => scrollToSection("#home")}
+            aria-label="Júlio Silvestre — início"
             className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <img 
-              src={jsLogo} 
-              alt="JS Logo" 
-              className="h-10 w-auto"
-            />
+            <Logo className="h-10 w-10" />
           </button>
 
           {/* Desktop Navigation */}
